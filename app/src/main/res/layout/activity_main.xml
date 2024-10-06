@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- FrameLayout para sobrepor o mapa e os botões -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Mapa -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map_container"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Botão Desbloquear Área (sobre o mapa, no topo) -->
+        <Button
+            android:id="@+id/unlockAreaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/unlock_area"
+            android:textColor="@android:color/white" />
+
+        <!-- Botão Adicionar Mensagem (sobre o mapa, no fundo) -->
+        <Button
+            android:id="@+id/addMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="@string/add_message"
+            android:textColor="@android:color/white" />
+
+    </FrameLayout>
+
+</RelativeLayout>

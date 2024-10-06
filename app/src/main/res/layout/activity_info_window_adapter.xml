@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <!-- Título do marcador -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Título da mensagem" />
+
+    <!-- Mensagem completa exibida no snippet -->
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="Mensagem completa vai aqui" />
+</LinearLayout>
