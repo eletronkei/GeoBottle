@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- Layout para a mensagem enviada -->
+    <LinearLayout
+        android:id="@+id/sentMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="0dp"
+        android:elevation="1dp"
+        android:layout_gravity="end"
+        android:background="@drawable/rounded_message_sent">
+
+        <!-- Texto da mensagem enviada -->
+        <TextView
+            android:id="@+id/textViewSentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sent_message_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="1dp"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Layout para a mensagem recebida -->
+    <LinearLayout
+        android:id="@+id/receivedMessageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:visibility="gone"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="40dp"
+        android:elevation="1dp"
+        android:background="@drawable/rounded_message_received">
+
+        <!-- E-mail do remetente (visível por padrão) -->
+        <TextView
+            android:id="@+id/textViewSenderNameReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail do remetente"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="4dp" />
+
+        <!-- Texto da mensagem recebida -->
+        <TextView
+            android:id="@+id/textViewReceivedMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/received_message_text"
+            android:textSize="15sp"
+            android:lineSpacingExtra="1dp"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>

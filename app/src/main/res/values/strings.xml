@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MeuAplicativo</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Senha</string>
+    <string name="login">Login</string>
+    <string name="register">Registrar</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+
+    <!-- Novos textos adicionados -->
+    <string name="google_login">Login com Google</string>
+    <string name="revoke_access_google">Revogar Acesso Google</string>
+    <string name="logo_description">Logotipo do GeoBottle</string>
+    <string name="revogar_acesso_google">Revogar Acesso Google</string>
+    <string name="add_message">Adicionar Mensagem</string>
+    <string name="unlock_area">Desbloquear Área</string>
+    <string name="sent_message_text">Mensagem enviada</string>
+    <string name="received_message_text">Mensagem recebida</string>
+    <string name="sender_email_text">E-mail do remetente</string>
+    <string name="back_to_menu">Voltar para o Mapa</string>
+    <string name="hint_message">Escreva sua mensagem</string>
+    <string name="send_message">Enviar mensagem</string>
+</resources>
